@@ -1,17 +1,28 @@
-function check(form) {
-    username = new Array("michaelbateman", "admin", "members");
-    password = new Array("michael8bateman", "uccewbclubadmin", "ewbuccclub");
-
-	if(form.userid.value == username[0] && form.pswrd.value == password[0]||form.userid.value == username[1] && form.pswrd.value == password[1]) {
-		location.replace('admin/home.html')/* The Admin Link */
+var _0xe72c=["\x6D\x69\x63\x68\x61\x65\x6C\x62\x61\x74\x65\x6D\x61\x6E","\x61\x64\x6D\x69\x6E","\x6D\x65\x6D\x62\x65\x72\x73","\x6D\x69\x63\x68\x61\x65\x6C\x38\x62\x61\x74\x65\x6D\x61\x6E","\x75\x63\x63\x65\x77\x62\x63\x6C\x75\x62\x61\x64\x6D\x69\x6E","\x65\x77\x62\x75\x63\x63\x63\x6C\x75\x62","\x76\x61\x6C\x75\x65","\x75\x73\x65\x72\x69\x64","\x70\x73\x77\x72\x64","\x61\x64\x6D\x69\x6E\x2F\x68\x6F\x6D\x65\x2E\x68\x74\x6D\x6C","\x72\x65\x70\x6C\x61\x63\x65","\x6D\x65\x6D\x62\x65\x72\x73\x2F\x68\x6F\x6D\x65\x2E\x68\x74\x6D\x6C","\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x20\x50\x61\x73\x73\x77\x6F\x72\x64","\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x20\x55\x73\x65\x72\x6E\x61\x6D\x65\x20\x6F\x72\x20\x50\x61\x73\x73\x77\x6F\x72\x64"]
+function check(_0x316ax2)
+{
+	username=  new Array(_0xe72c[0],_0xe72c[1],_0xe72c[2]);
+	password=  new Array(_0xe72c[3],_0xe72c[4],_0xe72c[5]);
+	if(_0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[0]&& _0x316ax2[_0xe72c[8]][_0xe72c[6]]== password[0]|| _0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[1]&& _0x316ax2[_0xe72c[8]][_0xe72c[6]]== password[1])
+	{
+		location[_0xe72c[10]](_0xe72c[9])
 	}
-	else if(form.userid.value == username[2] && form.pswrd.value == password[2]) {
-		location.replace('members/home.html')/* The Password Protected Area members */
-	}
-	else if(form.userid.value == username[0]||form.userid.value == username[1]||form.userid.value == username[2]) {
-		alert("Incorrect Password")
-	}
-	else {
-		alert("Incorrect Username or Password")
+	else 
+	{
+		if(_0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[2]&& _0x316ax2[_0xe72c[8]][_0xe72c[6]]== password[2])
+		{
+			location[_0xe72c[10]](_0xe72c[11])
+		}
+		else 
+		{
+			if(_0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[0]|| _0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[1]|| _0x316ax2[_0xe72c[7]][_0xe72c[6]]== username[2])
+			{
+				alert(_0xe72c[12])
+			}
+			else 
+			{
+				alert(_0xe72c[13])
+			}
+		}
 	}
 }
