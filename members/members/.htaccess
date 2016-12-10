@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^[uccewb.tk]/.*$ [NC]
+RewriteRule ^.* /../../404.html [L,R]
