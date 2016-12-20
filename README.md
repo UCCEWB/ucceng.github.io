@@ -1,4 +1,5 @@
-# uccewb.tk
+# UCC Engineers Without Borders
+uccewb.github.io
 
 <p>This website is the beta version of the UCC Engineers Without Borders Club website.</p>
 
