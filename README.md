@@ -1,4 +1,4 @@
-# Engineering Society | [uccewb.github.io](uccewb.github.io)
+# Engineering Society | [uccewb.github.io](https://uccewb.github.io)
 [![Build Status](https://travis-ci.org/UCCEWB/uccewb.github.io.svg?branch=master)](https://travis-ci.org/UCCEWB/uccewb.github.io)
 
 ## About
