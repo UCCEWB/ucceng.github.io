@@ -21,21 +21,23 @@ To setup your machine, you will need to install the following:
 
 We will assume you're using a Mac, as Ruby comes pre-installed.
 
-1. [Download Git](https://git-scm.com/download/)
-2. Clone the repository
+Follow the following instructions, exactly:
+
+[Download Git](https://git-scm.com/download/)
+Clone the repository.  You can do this by typing:
 ```bash
 $ git clone https://github.com/UCCEWB/uccewb.github.io.git
 ```
-3. Enter the directory
+Enter the directory by typing:
 ```bash
 $ cd uccewb.github.io
 ```
-4. If you do not have Jekyll installed do so by typing:
+If you do not have Jekyll installed do so by typing:
 ```bash
 $ gem install jekyll
 ```
-6. Run `./start.sh`
+Run `./start.sh`
 __*Note:__ You may need to make* `.sh` *files executable.  You can do so by typing* `chmod +x ./<file>.sh`.
-6. Now you should be able to see the website by typing [http://localhost:4000](http://localhost:4000).
+Now you should be able to see the website by typing [http://localhost:4000](http://localhost:4000).
 
 If something is not working, please let us know in the [issue tracker](https://github.com/UCCEWB/uccewb.github.io/issues).
