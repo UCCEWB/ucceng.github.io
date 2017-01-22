@@ -11,7 +11,7 @@ title: Engineering Society
       </div>
       <div class="col-sm-8">
         <h1>Engineering Society</h1>
-        <p>Welcome to the Upper Canada College Engineering Society club!</p>
+        <p>Welcome to the Upper Canada College Engineering Society!</p>
         <div><a class="btn btn-lg btn-primary" href="about.html" role="button">Learn More &raquo;</a></div>
         <p></p>
         <div><a class="btn btn-lg btn-primary" href="mailto:geoffrey.jiang@ucc.on.ca?Subject=Sign%20Up%20For%20EWB">Sign Up &raquo;</a></div>
@@ -25,29 +25,20 @@ title: Engineering Society
       <h3 class="panel-title">Recent News</h3>
     </div>
     <div class="panel-body">
-      <!--
-      <div>
-        <a href="news.html#name"><h4>name <small>January 15, 2017</small></h4></a>
-      </div>
-      -->
-      <div>
-        <a href="news.html#FirstNewYearMeeting"><h4>First New Year Meeting <small>January 21, 2017</small></h4></a>
-      </div>
-      <div>
-        <a href="news.html#ClubsFair"><h4>Clubs Fair <small>January 15, 2017</small></h4></a>
-      </div>
-      <div>
-        <a href="news.html#NowOnSlack"><h4>Slack <small>December 18, 2016</small></h4></a>
-      </div>
-      <div>
-        <a href="news.html#FirstClubMeeting"><h4>First Club Meeting <small>December 6, 2016</small></h4></a>
-      </div>
-      <div>
-        <a href="news.html#ClubHeadsAnnounced"><h4>Club Heads Announced <small>December 1, 2016</small></h4></a>
+      <div class="blog-posts">
+        {% for post in site.posts limit:5 %}
+          <div class="blog-post spacing">
+            <div>
+              <h4><a href="news.html#{{ post.url }}">{{ post.title }}</a><small> - {{ post.date | date: '%B %d, %Y' }} </small></h4>
+            </div>
+          </div>
+        {% endfor %}
       </div>
       <div style="padding-top: 15px">
         <a href="news.html">
-          <button class="btn btn-primary" role="button">More News &raquo;</button>
+          <button class="btn btn-primary">
+            More News &raquo;
+          </button>
         </a>
       </div>
     </div>
