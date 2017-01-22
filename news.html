@@ -8,102 +8,20 @@ title: News
     <h1>News</h1>
   </div>
 </div>
-    <!--
-    <div class="container">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><a name=""></a><b>Name</b> - January 15, 2017</h3>
-        </div>
-        <div class="panel-body">
-          content...
-        </div>
-      </div>
-    </div>
-    -->
 <div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a name="FirstNewYearMeeting"></a><b>First New Year Meeting</b> - January 21, 2017</h3>
-    </div>
-    <div class="panel-body">
-      Thank you to everyone who came out to our meeting last week!  There is no meeting on Tuesday January 24, as it is a focus day.  See you soon!
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a name="ClubsFair"></a><b>Club Fair</b> - January 15, 2017</h3>
-    </div>
-    <div class="panel-body">
-      Come out to the Student Centre on Monday January 16, 2017 to learn about the Engineering Society (Engineers Without Borders) Club.  Some of the club heads will be available to answer questions that you may have.
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a name="NowOnSlack"></a><b>Slack</b> - December 18, 2016</h3>
-    </div>
-    <div class="panel-body">
-      <div>
-        The Upper Canada College Engineering Society is now using Slack.  Slack has many features that will allow us to stay organized and to be more productive.  Using Slack will also mean that it can reduce the Gmail <q>chatter</q>.
-      </div>
-      <div style="padding-top: 20px">
-        <h4>How to join:</h4>
-      </div>
-      <div style="padding-top: 10px">
-        <div>
-          1. You should receive an email from Michael or Simon asking you to join the UCC Engineers Without Borders organization.
-        </div>
-        <div>
-          <i>Note: If you do not receive an invitation from Michael or Simon, please email them.</i>
+  <div class="blog-posts">
+    {% for post in site.posts %}
+      <div class="blog-post spacing">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <a name="{{ post.url }}"></a>
+            <h3 class="panel-title"><b>{{ post.title }}</b> - {{ post.date | date: '%B %d, %Y' }}</h3>
+          </div>
+          <div class="panel-body">
+            {{ post.excerpt }}
+          </div>
         </div>
       </div>
-      <div>
-        2. Click the link and follow the prompts to create an account.
-      </div>
-      <div>
-        3. You should automatically be added into the <q>announcements</q> and <q>random</q> group.
-      </div>
-      <div style="padding-top: 20px">
-        <div>
-          <h4>Downloads:</h4>
-        </div>
-        <div style="padding-top: 10px">
-          There is a Slack app for almost every platform.  Click <a href="https://slack.com/downloads" target="_blank">here</a> to get the Slack download for your OS.  We strongly recommend you download the macOS/OS X version for your Mac <a href="https://slack.com/downloads/osx" target="_blank">here</a>.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a name="FirstClubMeeting"></a><b>First Club Meeting</b> - December 13, 2016</h3>
-    </div>
-    <div class="panel-body">
-      We will be holding our first club meeting on Tuesday December 13, 2016 in room 127.  Come on out and see what the EWB club is all about.  If you are unable to make it and would like more information about the club, please send an email to the club heads.
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a name="ClubHeadsAnnounced"></a><b>Club Heads Announced</b> - December 1, 2016</h3>
-    </div>
-    <div class="panel-body">
-      Welcome to the Engineers Without Borders club.  There will be five club heads for this year, Michael Bateman, Simon Guo, Shaan Hooey, Geoffrey Jiang and Isaac Ng.  If you would like to get in touch, please email them on the <q>team</q> page.
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title"><b>Hello, world!</b> - December 1, 2016</h3>
-    </div>
-    <div class="panel-body">
-      Welcome to the Engineers Without Borders Club.  The club will be <q>officially</q> starting in January after the winter clubs fair.  Stay tuned for news on the club heads.
-    </div>
+    {% endfor %}
   </div>
 </div>
