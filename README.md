@@ -40,4 +40,6 @@ Run `./start.sh`
 __*Note:__ You may need to make* `.sh` *files executable.  You can do so by typing* `chmod +x ./<file>.sh`.
 Now you should be able to see the website by typing [http://localhost:4000](http://localhost:4000).
 
+To stop the server, press `control` + `c`
+
 If something is not working, please let us know in the [issue tracker](https://github.com/UCCEWB/uccewb.github.io/issues).
