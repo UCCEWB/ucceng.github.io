@@ -33,13 +33,13 @@ title: Engineering Society
         {% for post in site.posts limit:5 %}
           <div class="blog-post spacing">
             <div>
-              <h4><a href="news.html#{{ post.url }}">{{ post.title }}</a><small> - {{ post.date | date: '%B %d, %Y' }} </small></h4>
+              <h4><a href="/news/#{{ post.url }}">{{ post.title }}</a><small> - {{ post.date | date: '%B %d, %Y' }} </small></h4>
             </div>
           </div>
         {% endfor %}
       </div>
       <div style="padding-top: 15px">
-        <a href="news.html">
+        <a href="/news/">
           <button class="btn btn-primary">
             More News &raquo;
           </button>
