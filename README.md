@@ -24,20 +24,23 @@ We will assume you're using a Mac, as Ruby comes pre-installed.
 Follow the following instructions, exactly:
 
 [Download Git](https://git-scm.com/download/)
-Clone the repository.  You can do this by typing:
+
+* Clone the repository.  You can do this by typing:
 ```bash
 $ git clone https://github.com/UCCEWB/uccewb.github.io.git
 ```
-Enter the directory by typing:
+* Enter the directory by typing:
 ```bash
 $ cd uccewb.github.io
 ```
-If you do not have Jekyll installed, you can install it by typing:
+* If you do not have Jekyll installed, you can install it by typing:
 ```bash
 $ gem install jekyll
 ```
-Run `./start.sh`
+* Run `./start.sh`
+
 __Note:__ You may need to make `.sh` files executable.  You can do so by typing `chmod +x ./<file>.sh`.
+
 Now you should be able to see the website by typing [http://localhost:4000](http://localhost:4000).
 
 To stop the server, press `control` + `c`
