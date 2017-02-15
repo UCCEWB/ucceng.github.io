@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - 2.4.0
 
-script: "jekyll build"
+script: 
+  - bundle exec jekyll build
 
 sudo: false
