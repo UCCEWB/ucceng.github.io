@@ -1,40 +1,95 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-        <title>UCC Engineering</title>
-        <link rel="stylesheet" href="css/bootstrap.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--credit to parallax framework-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UCC Engineering Society</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- credit to parrallax for provide the following mobile code -->
+    <script>
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });
+    </script>
+    <!--import scripts-->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
 
-    <body>
-        <div class="navbar navbar-fixed-top navbar-light bg-faded">
-            <a class="navbar-brand">UCC Engineering Society</a>
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">News</a>
-                </li>
-            </ul>
+  <body>
+      <div class="navbar navbar-fixed-top navbar-light bg-faded">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/logo.png" width="36px" height="36px">
+          </a>
         </div>
+        <a class="navbar-brand">UCC Engineering Society</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Programs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Join us</a>
+            </li>
+        </ul>
+      </div>
 
-        <div style="text-align: center">
-            <img src="img/clubphoto.jpg" alt="Engineering Society Picture" class="img-rounded" alt="" height="100%" align="middle">
-
-        <footer id="footer">
-					Designed and Coded by <a class="page-scroll" href = "#" style="color: #34E52C;"> the UCC Engineering Society Team</a>, on <a href="https://github.com/UCCEWB/uccewb.github.io" target="_blank"><i class="fa fa-github"></i></a> with <i class="fa fa-code"></i>
-				</footer>
-
+      <div style="text-align: center">
+        <img src="img/clubphoto.jpg" alt="Engineering Society Picture" class="img-rounded" alt="" height="100%" align="middle">
+      </div>
+      <section id="team" class="center">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/team/shaanhooey.png" alt="Shaan Hooey">
+              <div class="caption">
+                <h3>Shaan Hooey</h3>
+                <p>Club Head</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/team/shaanhooey.png" alt="Geoffery Jiang">
+              <div class="caption">
+                <h3>Shaan Hooey</h3>
+                <p>Club Head</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <footer id="footer" class="center">
+				Designed and Coded by <a class="page-scroll" href = "#" style="color: #34E52C;"> the UCC Engineering Society Team</a>, on <a href="https://github.com/UCCEWB/uccewb.github.io" target="_blank"><i class="fa fa-github"></i></a> with <i class="fa fa-code"></i>
+			</footer>
     </body>
 </html>
