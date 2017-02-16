@@ -1,3 +1,17 @@
 .center{
   text-align: center;
 }
+
+.bg img{
+  width: auto;
+  height: auto;
+}
+
+.white{
+  color: white;
+}
+
+.general{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

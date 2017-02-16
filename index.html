@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--credit to parallax framework-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    </head>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- credit to parrallax for provide the following mobile code -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <!--thx for parrallex.js's support for the following mobile code-->
     <script>
       $(function(){
         if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
@@ -30,66 +33,82 @@
         }
       });
     </script>
-    <!--import scripts-->
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </head>
-
-  <body>
-      <div class="navbar navbar-fixed-top navbar-light bg-faded">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="img/logo.png" width="36px" height="36px">
-          </a>
-        </div>
+  <body style="padding-top: 70px;">
+    <div class="navbar navbar-fixed-top navbar-light bg-faded">
         <a class="navbar-brand">UCC Engineering Society</a>
         <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link">Welcome</a>
+                <a class="nav-link">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Programs</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link">Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Join us</a>
+                <a class="nav-link">News</a>
             </li>
         </ul>
-      </div>
+    </div>
 
-      <div style="text-align: center">
-        <img src="img/clubphoto.jpg" alt="Engineering Society Picture" class="img-rounded" alt="" height="100%" align="middle">
+    <section>
+      <div class="container general">
+        <h1>Upper Canada College Engineering Society</h1>
       </div>
-      <section id="team" class="center">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="img/team/shaanhooey.png" alt="Shaan Hooey">
-              <div class="caption">
-                <h3>Shaan Hooey</h3>
-                <p>Club Head</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="img/team/shaanhooey.png" alt="Geoffery Jiang">
-              <div class="caption">
-                <h3>Shaan Hooey</h3>
-                <p>Club Head</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer id="footer" class="center">
-				Designed and Coded by <a class="page-scroll" href = "#" style="color: #34E52C;"> the UCC Engineering Society Team</a>, on <a href="https://github.com/UCCEWB/uccewb.github.io" target="_blank"><i class="fa fa-github"></i></a> with <i class="fa fa-code"></i>
-			</footer>
-    </body>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/clubphoto.jpg" data-natural-width="1400" data-natural-height="900"></div>
+
+    <section>
+      <div class="container general">
+        <h1>Who are we?</h1>
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/3d-print.jpg" data-natural-width="1400" data-natural-height="1400"></div>
+
+    <section>
+      <div class="container general">
+      <h1>What do we do? Programs</h1>
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/clubphoto.jpg" data-natural-width="1400" data-natural-height="900"></div>
+
+    <section>
+      <div class="container general">
+      <h1>Join us!</h1>
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/clubphoto.jpg" data-natural-width="1400" data-natural-height="900"></div>
+
+    <section>
+      <div class="container general">
+      <h1>Join us!</h1>
+      <p>It is simple. shoot xxx a <a>email</a>, and sign up for the slack below.</p>
+      </div>
+    </section>
+
+    <section>
+     <div class="container-fluid" style="background-color:#F47B20;">
+       <footer class="center white">
+         <div style="padding-top:36px; padding-bottom:36px;">Designed and Coded by <a class="page-scroll" href = "#" style="color: #2B343D;"> the UCC Engineering Society Team</a>, on <a href="https://github.com/UCCEWB/uccewb.github.io" target="_blank"><i style="color:#2B343D" class="fa fa-github"></i></a> with <i class="fa fa-code"></i></div>
+       </footer>
+      </div>
+    </section>
+
+    <!--thx for parrallex.js's support for the following code-->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-20587204-9', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
