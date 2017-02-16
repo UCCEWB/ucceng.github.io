@@ -1,0 +1,1 @@
+credit to [parallax.js example website](https://github.com/pixelcog/parallax.js)
