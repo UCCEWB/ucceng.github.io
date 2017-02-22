@@ -25,3 +25,7 @@
 	height: 100%;
 	width: 100%;
 }
+
+.vertical-line-L {
+  border-left: 1px dashed #333;
+}
