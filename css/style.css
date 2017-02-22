@@ -20,3 +20,8 @@
   width: 250px;
   height: 250px;
 }
+
+.full-page {
+	height: 100%;
+	width: 100%;
+}
