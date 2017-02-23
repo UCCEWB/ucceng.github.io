@@ -1,9 +1,0 @@
-# Site settings
-title: UCC Engineering Society
-email: michael.bateman@ucc.on.ca
-description: > # The UCC Engineering Society
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://uccewb.github.io" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
