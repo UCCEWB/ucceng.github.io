@@ -1,3 +1,4 @@
+
 * {
   border-radius: 0 !important;
 }
@@ -31,6 +32,10 @@
 .head{
   width: 250px;
   height: 250px;
+}
+
+.team{
+  padding-top: 20px;
 }
 
 .full-page {
