@@ -35,9 +35,10 @@
   <body style="padding-top: 70px;">
     <div class="navbar navbar-fixed-top navbar-light bg-faded">
         <a class="navbar-brand">
-            <img style="width:42px; height:42px" src="img/logo.png">UCC Engineering Society
+            <img src="img/logo.png" width="28" height="28" class="align-top">    UCC Engineering Society
         </a>
-        <ul class="nav navbar-nav" style="float:right">
+
+        <ul class="nav navbar-nav hidden-sm-down" style="float:right">
             <li class="nav-item">
                 <a class="nav-link">Home</a>
             </li>
@@ -54,6 +55,21 @@
                 <a class="nav-link">Join</a>
             </li>
         </ul>
+
+        <div class="text-xs-right">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+        <div class="collapse" id="nav-collapse">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-muted">Home</a>
+            <a class="dropdown-item text-muted">About</a>
+            <a class="dropdown-item text-muted">Programs</a>
+            <a class="dropdown-item text-muted">Team</a>
+            <a class="dropdown-item text-muted">Join</a>
+        </div>
     </div>
 
     <section>
